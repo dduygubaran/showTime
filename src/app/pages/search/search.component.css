@@ -1,0 +1,15 @@
+button {
+  background-color: #69fffc;
+}
+
+button:hover {
+  background-color: #fff069;
+}
+
+img {
+  width: 100%;
+}
+
+h5 {
+  color: #fff;
+}
