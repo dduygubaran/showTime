@@ -24,4 +24,50 @@ export class MovieApiService{
     return this.http.get(this.baseUrl+ `/search/movie?api_key=${this.apiKey}&query=${data.movieName}`);
   }
 
+  movieDetailsApiData(data:any): Observable<any> {
+    return this.http.get(this.baseUrl + `/movie/${data}?api_key=${this.apiKey}`);
+  }
+
+  movieVideoApiData(data:any): Observable<any> {
+    return this.http.get(this.baseUrl + `/movie/${data}/videos?api_key=${this.apiKey}`)
+  }
+
+  movieCastApiData(data:any): Observable<any> {
+    return this.http.get(this.baseUrl+ `/movie/${data}/credits?api_key=${this.apiKey}`)
+  }
+
+  // Action
+  fetchActionMovies(): Observable<any> {
+    return this.http.get(this.baseUrl + `/discover/movie?api_key=${this.apiKey}&with_genres=28`);
+  }
+
+  // Adventure
+  fetchAdventureMovies(): Observable<any> {
+    return this.http.get(this.baseUrl + `/discover/movie?api_key=${this.apiKey}&with_genres=12`)
+  }
+
+  // Animation
+  fetchAnimationMovies(): Observable<any> {
+    return this.http.get(this.baseUrl + `/discover/movie?api_key=${this.apiKey}&with_genres=16`)
+  }
+
+  // Comedy
+  fetchComedyMovies(): Observable<any> {
+    return this.http.get(this.baseUrl + `/discover/movie?api_key=${this.apiKey}&with_genres=35`)
+  }
+
+  // Documentary
+  fetchDocumentaryMovies(): Observable<any> {
+    return this.http.get(this.baseUrl + `/discover/movie?api_key=${this.apiKey}&with_genres=99`)
+  }
+
+  //Science-Fiction
+  fetchScienceFictionMovies(): Observable<any> {
+    return this.http.get(this.baseUrl + `/discover/movie?api_key=${this.apiKey}&with_genres=878`)
+  }
+
+  //Thriller
+  fetchSThrillerMovies(): Observable<any> {
+    return this.http.get(this.baseUrl + `/discover/movie?api_key=${this.apiKey}&with_genres=53`)
+  }
 }
