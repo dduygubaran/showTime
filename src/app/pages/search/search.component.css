@@ -1,9 +1,9 @@
 button {
-  background-color: #69fffc;
+  background-color: #fff;
 }
 
 button:hover {
-  background-color: #fff069;
+  background-color: orange;
 }
 
 img {
@@ -13,3 +13,16 @@ img {
 h5 {
   color: #fff;
 }
+
+img {
+  width: 100%;
+  cursor: pointer;
+}
+
+input:hover {
+  border-color: orange;
+  border-width: 3px;
+}
+
+
+

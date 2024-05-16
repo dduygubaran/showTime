@@ -1,14 +1,18 @@
 .carousel-inner {
-  height: 650px;
+  height: 600px;
 }
 
 .carousel-item img {
-  height: 650px;
+  height: 1000px;
   object-fit: cover;
 }
 
+.carousel-caption {
+  height: 600px;
+}
+
 .carousel-caption h2 {
-  color: #fff069;
+  color: orange;
   font-weight: bold;
   text-decoration: underline;
   font-size: 36px;
@@ -46,5 +50,13 @@
 
 .rowposter::-webkit-scrollbar {
   display: none;
+}
+
+h5 {
+  color: #fff;
+}
+
+button {
+  color: orange;
 }
 

@@ -1,0 +1,23 @@
+.rowposter {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.rowimg {
+  max-height: 200px;
+  object-fit: contain;
+  width: 100%;
+  box-sizing: content-box;
+  transition: transform 450ms;
+  margin-right: 10px;
+}
+
+.rowimg:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.rowposter::-webkit-scrollbar {
+  display: none;
+}

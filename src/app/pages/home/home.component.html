@@ -1,5 +1,5 @@
 <!-- Head Image -->
-<div class="container-fluid">
+<div class="container-fluid mt-5">
   <div id="carouselExampleCaptions" class="carousel slide">
 
     <div class="carousel-inner">
@@ -25,10 +25,10 @@
 </div>
 
 <!-- Trending Movies -->
-<div class="contain mt-3 p-4">
+<div class="contain p-4">
   <div class="row">
-    <h5 class="text-white"> Trending Movies</h5>
-      <div class="rowposter mt-3 p-2">
+    <h5 > Trending Movies</h5>
+      <div class="rowposter  p-2">
         <ng-container *ngFor="let trend of trendingResult">
           <img src="https://image.tmdb.org/t/p/original/{{trend.poster_path}}" class="rowimg largeposter" [routerLink]="['/movie', trend.id]">
         </ng-container>
